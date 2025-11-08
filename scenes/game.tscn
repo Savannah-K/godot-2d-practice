@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b51q7dcw0n6rt" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://b1fya7dfb2tx1" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://cn6v1y58o1jmv" path="res://scenes/killzone.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://3d13rsdkf0sf" path="res://scenes/slime.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://dcr8d1du7y2gp" path="res://slime_enemy.tscn" id="6_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -339,14 +339,5 @@ position = Vector2(238, -14)
 [node name="Coin4" parent="Coins" instance=ExtResource("4_lbhrr")]
 position = Vector2(354, 88)
 
-[node name="slime" parent="." instance=ExtResource("6_p57ef")]
-position = Vector2(26, 53)
-
-[node name="slime2" parent="slime" instance=ExtResource("6_p57ef")]
-position = Vector2(72, -4)
-
-[node name="slime3" parent="slime" instance=ExtResource("6_p57ef")]
-position = Vector2(314, 44)
-
-[node name="slime4" parent="slime" instance=ExtResource("6_p57ef")]
-position = Vector2(570, 12)
+[node name="slime_enemy" parent="." instance=ExtResource("6_p57ef")]
+position = Vector2(28, 65)
