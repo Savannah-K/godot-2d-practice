@@ -341,3 +341,9 @@ position = Vector2(354, 88)
 
 [node name="slime_enemy" parent="." instance=ExtResource("6_p57ef")]
 position = Vector2(580, 64)
+
+[node name="Node2D" parent="slime_enemy" instance=ExtResource("6_p57ef")]
+position = Vector2(-475, -15)
+
+[node name="Node2D2" parent="slime_enemy" instance=ExtResource("6_p57ef")]
+position = Vector2(-241, 32)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dcr8d1du7y2gp"]
 
-[ext_resource type="Script" uid="uid://c5bmhy3gdm6ji" path="res://scenes/slime_enemy.gd" id="1_fq0mw"]
+[ext_resource type="Script" uid="uid://c5bmhy3gdm6ji" path="res://scripts/slime_enemy.gd" id="1_fq0mw"]
 [ext_resource type="Texture2D" uid="uid://bv705y1jojmbv" path="res://assets/sprites/slime_purple.png" id="1_ljpcw"]
 [ext_resource type="PackedScene" uid="uid://cn6v1y58o1jmv" path="res://scenes/killzone.tscn" id="2_wns1r"]
 
@@ -60,8 +60,8 @@ debug_color = Color(0.9554189, 1.347661e-06, 0.5458604, 0.41960785)
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(0, -6)
-target_position = Vector2(8, 0)
+target_position = Vector2(7, 0)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
 position = Vector2(-1, -6)
-target_position = Vector2(-8, 0)
+target_position = Vector2(-6, 0)
