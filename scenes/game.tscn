@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://d11mjy8lax6ul"]
+[gd_scene load_steps=21 format=4 uid="uid://d11mjy8lax6ul"]
 
 [ext_resource type="Script" uid="uid://c87auotl65igs" path="res://scripts/game_manager.gd" id="1_gee14"]
 [ext_resource type="PackedScene" uid="uid://c18x0kqhivrk7" path="res://scenes/player.tscn" id="1_uwrxv"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://dcr8d1du7y2gp" path="res://scenes/slime_enemy.tscn" id="6_p57ef"]
 [ext_resource type="FontFile" uid="uid://cv4syvubhynwc" path="res://assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
 [ext_resource type="FontFile" uid="uid://bsgxf7pg2w4k8" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="9_0tnpc"]
-[ext_resource type="AudioStream" uid="uid://cixao0w73h8aj" path="res://assets/music/time_for_adventure.mp3" id="10_vtaks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -422,9 +421,6 @@ _data = {
 &"RESET": SubResource("Animation_lbhrr")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
-distance = -129.0
-
 [sub_resource type="Animation" id="Animation_vtaks"]
 resource_name = "platform2"
 loop_mode = 2
@@ -461,6 +457,9 @@ _data = {
 &"RESET": SubResource("Animation_kvpfn"),
 &"platform2": SubResource("Animation_vtaks")
 }
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
+distance = -129.0
 
 [node name="Game" type="Node2D"]
 
@@ -519,6 +518,15 @@ libraries = {
 &"": SubResource("AnimationLibrary_iywne")
 }
 autoplay = "Move"
+
+[node name="Platform2" parent="Platforms" instance=ExtResource("3_lnu2h")]
+position = Vector2(745, 26)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/Platform2"]
+libraries = {
+&"": SubResource("AnimationLibrary_dinhu")
+}
+autoplay = "platform2"
 
 [node name="killzone" parent="." instance=ExtResource("5_iywne")]
 
@@ -592,16 +600,3 @@ offset_bottom = -139.0
 theme_override_fonts/font = ExtResource("9_0tnpc")
 theme_override_font_sizes/font_size = 8
 text = "You made it to The End!"
-
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("10_vtaks")
-autoplay = true
-
-[node name="Platform2" parent="." instance=ExtResource("3_lnu2h")]
-position = Vector2(745, 26)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform2"]
-libraries = {
-&"": SubResource("AnimationLibrary_dinhu")
-}
-autoplay = "platform2"
