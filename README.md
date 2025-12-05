@@ -1,5 +1,7 @@
 <a id="readme-top"></a>
 
+This is a practice game that has helped me learn godot! Its a platformer with coun collection and moving enemies! Reach the end to see the coins you collected!
+
 <!-- SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
