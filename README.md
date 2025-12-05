@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-This is a practice game that has helped me learn godot! Its a platformer with coun collection and moving enemies! Reach the end to see the coins you collected!
+This is a practice game that has helped me learn godot! Its a platformer with coin collection and moving enemies! Reach the end to see the coins you collected!
 
 <!-- SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -10,6 +10,9 @@ This is a practice game that has helped me learn godot! Its a platformer with co
 [![MIT License][license-shield]][license-url]
 
 <!-- HEADER -->
+Assets Used!
+### Assets Used
+- [Brackeys Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle) — Free platformer assets by Brackeys on Itch.io.
 <br />
 <div align="center">
     <a href="https://github.com/BudzioT/Godot_Super-Wakatime">
