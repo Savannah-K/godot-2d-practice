@@ -3,11 +3,6 @@
 This is a practice game that has helped me learn godot! Its a platformer with coin collection and moving enemies! Reach the end to see the coins you collected!
 
 <!-- SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 <!-- HEADER -->
 Assets Used!
