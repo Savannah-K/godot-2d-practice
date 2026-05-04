@@ -5,7 +5,6 @@ This is a practice game that has helped me learn godot! Its a platformer with co
 <!-- SHIELDS -->
 
 <!-- HEADER -->
-Assets Used!
 ### Assets Used
 - [Brackeys Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle) — Free platformer assets by Brackeys on Itch.io.
 <br />
